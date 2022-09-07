@@ -24,8 +24,14 @@ df = pd.read_csv('glossary.csv')
 # Search Function
 search = st.text_input('검색어를 입력하세요')
 
-if df['영어'].str.contains(search).any() and search != '':
+option = st.selectbox('검색할 대상을 선택하세요', ('영어', '번역문'))
+
+
+if df['영어'].str.contains(search).any() and search != '' and option == '영어':
     st.write(df[df['영어'].str.contains(search)])
+elif df['번역문'].str.contains(search).any() and search != '' and option == '번역문':
+    st.write(df[df['번역문'].str.contains(search)])
+    
 elif search == '':
     st.write('')
 else:
