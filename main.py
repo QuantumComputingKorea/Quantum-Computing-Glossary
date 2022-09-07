@@ -34,6 +34,11 @@ df = pd.read_csv('glossary.csv')
 #search input
 
 search = st.text_input('검색어를 입력하세요')
+
+# language option
+option = st.radio('언어', ('영어', '한글'))
+
+# output search result
 if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
     st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
 elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
@@ -43,8 +48,7 @@ elif search == '':
 else:
     st.write('검색어가 없습니다.')
 
-# language option
-option = st.radio('언어', ('영어', '한글'))
+
 
 # Sort data
 sort_df=df.sort_values('영어') # Alphbetical order
