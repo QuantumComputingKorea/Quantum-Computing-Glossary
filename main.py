@@ -24,7 +24,7 @@ df = pd.read_csv('glossary.csv')
 search = st.text_input('검색어를 입력하세요')
 
 # language option
-option = st.radio('언어', ('영어', '한글'), horiozontal=True)
+option = st.radio('언어', ('영어', '한글'), horizontal=True)
 
 # output search result
 if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
