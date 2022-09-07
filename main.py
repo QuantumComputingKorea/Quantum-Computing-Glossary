@@ -15,7 +15,7 @@ st.title('양자컴퓨터 문서번역 용어집')
 st.header('용어 검색')
 # Read data
 df = pd.read_csv('glossary.csv')
-df = df.set_index('No') # Set index
+df = df.reset_index(drop=True, inplace=True)
 
 # Search Function
 #search input
