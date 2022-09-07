@@ -4,8 +4,8 @@ import streamlit as st
 """
 Todo:
 1. 새로운 데이터를 추가할 수 있는 기능 (ex: github에 논의할 단어의 issue를 남기는 링크 버튼)
-2. 
-3. 사이트 꾸미기
+2. 검색된 데이터 "번역문" 가끔식 한글 잘리는것 해결
+3. 사이트 배열 및 커스터마이징
 """
 
 # Hide index
@@ -43,6 +43,8 @@ elif button_A and option == '한글':
     container.empty()
     option = '영어'
     button_A = container.button('영어')
+else:
+    option = option
 
 #search input
 search = st.text_input('검색어를 입력하세요')
