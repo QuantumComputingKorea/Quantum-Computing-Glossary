@@ -1,6 +1,12 @@
 import pandas as pd
 import streamlit as st
 
+"""
+Todo:
+1. 새로운 데이터를 추가할 수 있는 기능 (ex: github에 논의할 단어의 issue를 남기는 링크 버튼)
+2. 사이트 꾸미기
+"""
+
 # Hide index
 # CSS to inject contained in a string
 hide_table_row_index = """
@@ -22,16 +28,16 @@ st.header('검색')
 df = pd.read_csv('glossary.csv')
 
 # Search Function
+
+option = st.selectbox('검색할 대상을 선택하세요', ('영어', '한글'))
+
 search = st.text_input('검색어를 입력하세요')
-
-option = st.selectbox('검색할 대상을 선택하세요', ('영어', '번역문'))
-
 
 if df['영어'].str.contains(search).any() and search != '' and option == '영어':
     st.write(df[df['영어'].str.contains(search)])
-elif df['번역문'].str.contains(search).any() and search != '' and option == '번역문':
+elif df['번역문'].str.contains(search).any() and search != '' and option == '한글':
     st.write(df[df['번역문'].str.contains(search)])
-    
+
 elif search == '':
     st.write('')
 else:
