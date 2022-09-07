@@ -26,12 +26,6 @@ search = st.text_input('검색어를 입력하세요')
 
 if df['영어'].str.contains(search).any() and search != '':
     st.write(df[df['영어'].str.contains(search)])
-
-"""
-elif df['한글'].str.contains(search).any() and search != '':
-    st.write(df[df['한글'].str.contains(search)])
-"""
-
 else:
     st.write('검색어가 없습니다.')
 
