@@ -8,18 +8,6 @@ Todo:
 3. 사이트 배열 및 커스터마이징
 """
 
-# Hide index
-# CSS to inject contained in a string
-hide_table_row_index = """
-            <style>
-            thead tr th:first-child {display:none}
-            tbody th {display:none}
-            </style>
-            """
-
-# Inject CSS with Markdown
-st.markdown(hide_table_row_index, unsafe_allow_html=True)
-
 
 # Title
 st.title('양자컴퓨터 문서번역 용어집')
@@ -52,6 +40,18 @@ else:
 
 # Sort data
 sort_df=df.sort_values('영어') # Alphbetical order
+
+# Hide index
+# CSS to inject contained in a string
+hide_table_row_index = """
+            <style>
+            thead tr th:first-child {display:none}
+            tbody th {display:none}
+            </style>
+            """
+
+# Inject CSS with Markdown
+st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
 # Display a static table
 with st.expander("전체 용어집"):
