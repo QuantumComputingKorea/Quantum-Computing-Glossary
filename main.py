@@ -47,9 +47,10 @@ else:
     option = option
 
 #search input
-search = st.text_input('검색어를 입력하세요')
+container2 = st.empty
+search = container2.text_input('검색어를 입력하세요')
 if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
-    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)], width=1280)
+    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
 elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
     st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
 elif search == '':
