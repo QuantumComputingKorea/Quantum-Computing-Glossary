@@ -34,12 +34,11 @@ container = st.empty()
 button_A = container.button('영어')
 option = '영어'
 
-if button_A:
+if button_A and option == '영어':
     container.empty()
     option = '한글'
-    button_B = container.button('한글')
-
-if button_B:
+    button_A = container.button('한글')
+elif button_A and option == '한글':
     container.empty()
     option = '영어'
     button_A = container.button('영어')
@@ -56,9 +55,9 @@ elif search == '':
 else:
     st.write('검색어가 없습니다.')
 
-st.header('전체 용어집')
 # Sort data
 sort_df=df.sort_values('영어') # Alphbetical order
 
 # Display a static table
-st.table(sort_df)
+with st.expander("전체 용어집"):
+    st.table(sort_df)
