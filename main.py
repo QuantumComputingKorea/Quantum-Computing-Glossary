@@ -30,9 +30,9 @@ style = df.style.hide_index() # hide index
 
 # output search result
 if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
-    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)].to_html, unsafe_allow_html=True)
+    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)].to_html(), unsafe_allow_html=True)
 elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
-    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)].to_html, unsafe_allow_html=True)
+    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)].to_html(), unsafe_allow_html=True)
 elif search == '':
     st.write('')
 else:
