@@ -49,10 +49,10 @@ search = st.text_input('검색어를 입력하세요')
 container2 = st.empty()
 if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
     container2.empty() # reset dataframe size
-    container2.write(df[df['영어'].str.contains(search, case=False)])
+    container2.dataframe(df[df['영어'].str.contains(search, case=False)])
 elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
     container2.empty() # reset dataframe size
-    container2.write(df[df['번역문'].str.contains(search, case=False)])
+    container2.dataframe(df[df['번역문'].str.contains(search, case=False)])
 
 elif search == '':
     container2.write('')
