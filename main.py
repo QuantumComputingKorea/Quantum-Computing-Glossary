@@ -7,6 +7,5 @@ st.title('양자컴퓨터 문서번역 용어집')
 
 # Read data
 df = pd.read_csv('glossary.csv')
-df['영어'].sort_values(ascending=False)
-df.head()
+df.sort_values(by='영어', ascending=False)
 st.table(df)
