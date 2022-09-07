@@ -3,8 +3,8 @@ import streamlit as st
 
 """
 Todo:
-1. 새로운 데이터를 추가할 수 있는 기능 (ex: github에 논의할 단어의 issue를 남기는 링크 버튼)
-2. 검색된 데이터 "번역문" 가끔식 한글 잘리는것 해결
+1. 새로운 데이터를 추가할 수 있는 기능 추가 (ex: github에 논의할 단어의 issue를 남기는 링크 버튼)
+2. 검색된 데이터 "번역문" 긴 한글 단어 잘리는것 해결 필요
 3. 사이트 배열 및 커스터마이징
 """
 
@@ -47,16 +47,17 @@ else:
     option = option
 
 #search input
-container2 = st.empty()
-search = container2.text_input('검색어를 입력하세요')
-if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
-    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
-elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
-    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
-elif search == '':
-    st.write('')
-else:
-    st.write('검색어가 없습니다.')
+with st.container():
+    container2 = st.empty()
+    search = container2.text_input('검색어를 입력하세요')
+    if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
+        st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
+    elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
+        st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
+    elif search == '':
+        st.write('')
+    else:
+        st.write('검색어가 없습니다.')
 
 # Sort data
 sort_df=df.sort_values('영어') # Alphbetical order
