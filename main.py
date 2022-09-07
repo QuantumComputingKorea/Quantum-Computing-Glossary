@@ -30,20 +30,7 @@ df = pd.read_csv('glossary.csv')
 
 # Search Function
 # language option
-### option = st.selectbox('검색할 대상을 선택하세요', ('영어', '한글'))
-
-
-button_A = st.button('영어')
-option = '영어'
-
-if button_A and option == '영어':
-    st.empty()
-    option = '한글'
-    button_A = st.button('한글')
-elif button_A and option == '한글':
-    st.empty()
-    option = '영어'
-    button_A = st.button('영어')
+option = st.radio('검색할 대상을 선택하세요', ('영어', '한글'))
 
 
 #search input
