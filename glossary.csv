@@ -8,3 +8,62 @@ Register,레지스터
 Sparse,희소
 Dense,밀집
 Decoherence,결깨짐
+Eigensolver,고윳값해석기
+Error,오류
+Repository,저장소
+SDK,SDK
+Subset,부분집합
+Training,학습
+Coherence,결맞음
+Computational Basis,계산 기저
+Clustering,군집화
+Finance,금융
+Machine Learning,기계학습
+Ground State,바닥 상태
+Excited State,들뜬 상태
+Ancilla Qubit,보조 큐비트
+Bitstring,비트열
+Custom,사용자 지정
+Feature Map,Feature Map
+Unitary Matrix,유니테리 행렬
+Dependency,의존성
+Binary,이진
+Tutorial,튜토리얼
+Method,프로그래밍 용어: 메서드
+Principle Component,주성분
+Qubit,큐비트
+Aer,Aer
+Aqua,Aqua
+Argument,Argument
+Bloch Sphere,Bloch 구면
+CMake,CMake
+Hadamard Gate,하다마드 게이트
+Ignis,Ignis
+Mapping,Mapping
+Qiskit,Qiskit
+Terra,Terra
+Backend,백엔드
+Gaussian,가우시안
+Library,라이브러리
+Neural Network,신경망
+Noise,노이즈
+Optimizer,옵티마이저
+Python,Python
+Quantum Circuit,양자 회로
+Random,무작위
+Search,검색
+Support Vector Machine,서포트 벡터 머신
+Visualize,시각화
+VQE,VQE
+Initialize,초기화
+Reset,재설정
+Garbage,가비지
+Convolutional Neural Network,합성곱 신경망
+Constant,상수
+Bent Function,구부러진 함수
+Hidden Shift Problem,숨겨진 이동 문제
+Anticommute,반교환
+Fault-Tolerant,오류허용
+Clifford Gate,클리포드 게이트
+Quick Quiz,막간 퀴즈
+Quick Exercise,막간 연습
