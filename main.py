@@ -25,9 +25,9 @@ df = pd.read_csv('glossary.csv')
 search = st.text_input('검색어를 입력하세요')
 
 if df['영어'].str.contains(search).any() and search != '':
-    st.write(df[df['영어'].str.contains(search)])
+    st.dataframe(df[df['영어'].str.contains(search)])
 else:
-    st.write('검색어가 없습니다.')
+    st.dataframe('검색어가 없습니다.')
 
 st.header('전체 용어집')
 # Sort data
