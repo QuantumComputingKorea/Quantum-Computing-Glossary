@@ -46,9 +46,9 @@ elif button_A and option == '한글':
 search = st.text_input('검색어를 입력하세요')
 
 if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
-    st.write(df[df['영어'].str.contains(search)])
+    st.write(df[df['영어'].str.contains(search, case=False)])
 elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
-    st.write(df[df['번역문'].str.contains(search)])
+    st.write(df[df['번역문'].str.contains(search, case=False)])
 
 elif search == '':
     st.write('')
