@@ -22,4 +22,4 @@ hide_table_row_index = """
 st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
 # Display a static table
-st.table(df)
+st.table(sort_df)
