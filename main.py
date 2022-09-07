@@ -1,12 +1,12 @@
 import pandas as pd
 import streamlit as st
 
-"""
-Todo:
-1. 새로운 데이터를 추가할 수 있는 기능 추가 (ex: github에 논의할 단어의 issue를 남기는 링크 버튼)
-2. 검색된 데이터 "번역문" 긴 한글 단어 잘리는것 해결 필요
-3. 사이트 배열 및 커스터마이징
-"""
+
+#Todo:
+#1. 새로운 데이터를 추가할 수 있는 기능 추가 (ex: github에 논의할 단어의 issue를 남기는 링크 버튼)
+#2. 검색된 데이터 "번역문" 긴 한글 단어 잘리는것 해결 필요
+#3. 사이트 배열 및 커스터마이징
+
 
 
 # Title
@@ -17,8 +17,6 @@ st.header('용어 검색')
 df = pd.read_csv('glossary.csv')
 
 # Search Function
-
-
 #search input
 
 search = st.text_input('검색어를 입력하세요')
