@@ -15,6 +15,7 @@ st.title('양자컴퓨터 문서번역 용어집')
 st.header('용어 검색')
 # Read data
 df = pd.read_csv('glossary.csv')
+df = df.set_index('No') # Set index
 
 # Search Function
 #search input
@@ -26,11 +27,9 @@ option = st.radio('언어', ('영어', '한글'), horizontal=True)
 
 # output search result
 if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
-    #st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
-    st._legacy_dataframe(df['영어'].str.contains(search, case=False))
+    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
 elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
-    #st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
-    st._legacy_dataframe(df['영어'].str.contains(search, case=False))
+    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
 elif search == '':
     st.write('')
 else:
