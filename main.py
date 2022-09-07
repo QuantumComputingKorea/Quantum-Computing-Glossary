@@ -30,7 +30,8 @@ df = pd.read_csv('glossary.csv')
 
 # Search Function
 # language option
-### option = st.selectbox('검색할 대상을 선택하세요', ('영어', '한글'))
+option = st.selectbox('검색할 대상을 선택하세요', ('영어', '한글'))
+"""
 container = st.empty()
 button_A = container.button('영어')
 option = '영어'
@@ -43,21 +44,20 @@ elif button_A and option == '한글':
     container.empty()
     option = '영어'
     button_A = container.button('영어')
-else:
-    option = option
+"""
+
 
 #search input
-with st.container():
-    container2 = st.empty()
-    search = container2.text_input('검색어를 입력하세요')
-    if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
-        st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
-    elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
-        st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
-    elif search == '':
-        st.write('')
-    else:
-        st.write('검색어가 없습니다.')
+
+search = st.text_input('검색어를 입력하세요')
+if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
+    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
+elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
+    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
+elif search == '':
+    st.write('')
+else:
+    st.write('검색어가 없습니다.')
 
 # Sort data
 sort_df=df.sort_values('영어') # Alphbetical order
