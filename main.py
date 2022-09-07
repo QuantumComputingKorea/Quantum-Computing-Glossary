@@ -29,8 +29,6 @@ st.header('용어 검색')
 df = pd.read_csv('glossary.csv')
 
 # Search Function
-# language option
-option = st.radio('검색할 대상을 선택하세요', ('영어', '한글'))
 
 
 #search input
@@ -44,6 +42,9 @@ elif search == '':
     st.write('')
 else:
     st.write('검색어가 없습니다.')
+
+# language option
+option = st.radio('언어', ('영어', '한글'))
 
 # Sort data
 sort_df=df.sort_values('영어') # Alphbetical order
