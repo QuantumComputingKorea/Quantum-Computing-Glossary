@@ -1,22 +1,6 @@
 import pandas as pd
 import streamlit as st
 
-# Title
-st.title('양자컴퓨터 문서번역 용어집')
-
-# Read data
-df = pd.read_csv('glossary.csv')
-
-# Search Function
-search = st.text_input('검색어를 입력하세요')
-if df['영어'].str.contains(search).any():
-    st.write(df[df['영어'].str.contains(search)])
-else:
-    st.write('검색어가 없습니다.')
-
-# Sort data
-sort_df=df.sort_values('영어') # Alphbetical order
-
 # Hide index
 # CSS to inject contained in a string
 hide_table_row_index = """
@@ -28,6 +12,28 @@ hide_table_row_index = """
 
 # Inject CSS with Markdown
 st.markdown(hide_table_row_index, unsafe_allow_html=True)
+
+
+# Title
+st.title('양자컴퓨터 문서번역 용어집')
+
+st.header('검색')
+# Read data
+df = pd.read_csv('glossary.csv')
+
+# Search Function
+search = st.text_input('검색어를 입력하세요')
+
+if df['영어'].str.contains(search).any() and search != '':
+    st.write(df[df['영어'].str.contains(search)])
+elif df['한글'].str.contains(search).any() and search != '':
+    st.write(df[df['한글'].str.contains(search)])
+else:
+    st.write('검색어가 없습니다.')
+
+st.header('전체 용어집')
+# Sort data
+sort_df=df.sort_values('영어') # Alphbetical order
 
 # Display a static table
 st.table(sort_df)
