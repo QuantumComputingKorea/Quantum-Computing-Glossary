@@ -37,8 +37,7 @@ else:
 
 
 # Sort data
-sort_df=df.sort_values(by='영어', inplace=True, key=lambda col: col.str.lower()) # Alphbetical order
-st.table(sort_df)
+sort_df=df.sort_values(by='영어', key=lambda col: col.str.lower()) # Alphbetical order
 
 # Hide index
 # CSS to inject contained in a string
