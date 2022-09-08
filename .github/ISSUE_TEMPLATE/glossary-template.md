@@ -1,5 +1,5 @@
 ---
-name: Change term template
+name: Glossary template
 about: Template for adding/change term for translation
 title: Add/Change [TERM]
 labels: ''
