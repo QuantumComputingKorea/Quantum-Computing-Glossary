@@ -1,1 +1,1 @@
-# quantum-computing-glossary
+# Quantum-Computing-Glossary
