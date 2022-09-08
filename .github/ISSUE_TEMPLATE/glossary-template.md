@@ -9,10 +9,9 @@ assignees: q-inho
 
 # Term: Word
 
-<!-- 선택하려면 [ ]사이에 X 를 넣어주세요.  -->
-<!-- ex: - [X] Current Term -->
-- [ ] Current Term
-- [ ] New term 
+<!-- Current Term 이나 New Term 중 선택 -->
+> `Current Term`
+> `New Term`
  ------------
 ## Suggested Translation: <!-- 용어 번역 제시안을 아래에 적어주세요 -->
 
