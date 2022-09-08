@@ -1,13 +1,13 @@
 ---
 name: Glossary template
 about: Template for adding/change term for translation
-title: Add/Change [TERM]
+title: Add/Change "TERM"
 labels: glossary
 assignees: q-inho
 
 ---
 
-# Term: <!-- 단어 -->
+# Term: Word
 
 <!-- 선택하려면 [ ]사이에 X 를 넣어주세요.  -->
 <!-- ex: - [X] Current Term -->
