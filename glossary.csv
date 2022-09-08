@@ -1,69 +1,276 @@
-﻿영어,번역문
-Protein Folding,단백질 접힘
-Parameter,매개변수
-Feature Space,Feature Space
-Generative Adverserial Network,생성적 적대 신경망
-Object,객체
-Register,레지스터
-Sparse,희소
-Dense,밀집
-Decoherence,결깨짐
-Eigensolver,고윳값해석기
-Error,오류
-Repository,저장소
-SDK,SDK
-Subset,부분집합
-Training,학습
-Coherence,결맞음
-Computational Basis,계산 기저
-Clustering,군집화
-Finance,금융
-Machine Learning,기계학습
-Ground State,바닥 상태
-Excited State,들뜬 상태
-Ancilla Qubit,보조 큐비트
-Bitstring,비트열
-Custom,사용자 지정
-Feature Map,Feature Map
-Unitary Matrix,유니테리 행렬
-Dependency,의존성
-Binary,이진
-Tutorial,튜토리얼
-Method,프로그래밍 용어: 메서드
-Principle Component,주성분
-Qubit,큐비트
+﻿영어,한글
+protein folding,단백질 접힘
+parameter,매개변수
+feature space,feature space
+generative adverserial network,생성적 적대 신경망
+object,객체
+register,레지스터
+sparse,희소
+dense,밀집
+decoherence,결깨짐
+eigensolver,고윳값해석기
+error,오류
+repository,저장소
+sdk,SDK
+subset,부분집합
+training,학습
+coherence,결맞음
+computational basis,계산 기저
+clustering,군집화
+finance,금융
+machine learning,기계 학습
+ground state,바닥 상태
+excited state,들뜬 상태
+ancilla qubit,보조 큐비트
+bitstring,비트열
+custom,사용자 지정
+feature map,feature map
+dependency,의존성
+binary,이진
+tutorial,튜토리얼
+method,프로그래밍 용어: 메서드
+principle component,주성분
+qubit,큐비트
 Aer,Aer
 Aqua,Aqua
-Argument,Argument
-Bloch Sphere,Bloch 구면
+argument,argument
+Bloch sphere,블로흐 구
 CMake,CMake
-Hadamard Gate,하다마드 게이트
+Hadamard gate,하다마드 게이트
 Ignis,Ignis
-Mapping,Mapping
+mapping,mapping
 Qiskit,Qiskit
 Terra,Terra
-Backend,백엔드
+backend,백엔드
 Gaussian,가우시안
-Library,라이브러리
-Neural Network,신경망
-Noise,노이즈
-Optimizer,옵티마이저
+library,라이브러리
+neural network,신경망
+noise,노이즈
+optimizer,옵티마이저
 Python,Python
-Quantum Circuit,양자 회로
-Random,무작위
-Search,검색
-Support Vector Machine,서포트 벡터 머신
-Visualize,시각화
+quantum circuit,양자 회로
+random,무작위
+search,검색
+support vector machine,서포트 벡터 머신
+visualize,시각화
 VQE,VQE
-Initialize,초기화
-Reset,재설정
-Garbage,가비지
-Convolutional Neural Network,합성곱 신경망
-Constant,상수
-Bent Function,구부러진 함수
-Hidden Shift Problem,숨겨진 이동 문제
-Anticommute,반교환
-Fault-Tolerant,오류허용
-Clifford Gate,클리포드 게이트
-Quick Quiz,막간 퀴즈
-Quick Exercise,막간 연습
+initialize,초기화
+reset,재설정
+garbage,가비지
+convolutional neural network,합성곱 신경망
+constant,상수
+bent function,구부러진 함수
+hidden shift problem,숨겨진 이동 문제
+anticommute,반교환
+fault-tolerant,오류허용
+clifford gate,클리포드 게이트
+quick quiz,막간 퀴즈
+quick exercise,막간 연습
+application,애플리케이션
+accuracy,정확도
+analyte,시료
+anisotropic,비등방성
+attenuated pulse generator,감쇠된 펄스 발생기
+beam splitter,빔분할기
+Bell,벨
+Bernstein-Vazirani algorithm,번스타인-바지라니 알고리듬
+binomial distribution,이항분포
+Boson,보손
+bragg grating reflection,브래그 반사
+braiding,꼬기
+branching path generator,경로 발생기
+canonical variable,정준 변수
+cavity,공동
+classical bit,고전 비트
+classical computer,고전 컴퓨터
+classical information,고전 정보
+classical system,고전 계
+cluster state,클러스터 상태
+coherence time,결맞음 시간
+coherent state,결맞음 상태
+common excess noise,추가적인 잡음
+Cooper pair,쿠퍼쌍
+Cooper pair box,쿠퍼쌍 상자
+Cramér-rao bound,크래머-라오 한계
+Cramér-rao inequality,크래머-라오 부등식
+Cramér-rao lower bound,크래머-라오 하한
+decoding,복호화
+decoherence,결어긋남
+defect,결함
+degree of squeezing,조임 정도
+dephasing time,위상 어긋남 시간
+digital logic gate,디지털 논리 게이트
+displacement operator,변위 연산자
+dissipation,흩어지기
+dynamic process,동역학 과정
+dynamical decoupling,동역학적 짝풀림
+dynamics,동역학
+eigenstate,고유 상태
+eigenvalue,고윳값해석기
+electron spin resonance,전자 스핀 공명
+encoding,암호화
+entangled photon,얽힘 광자
+error rate,오류율
+estimation,추정
+estimation error,추정 오차
+etimation precision,추정 정밀도
+estimation uncertainty,추정 불확정도
+estimator,추정량
+expectation value,기댓값
+fidelity,충실도
+Fisher information,피셔 정보
+flying qubit,동적 큐비트
+fractional quantum hall state,분수 양자 홀 상태
+free-Hamiltonian,자유-해밀토니안
+frustration,쩔쩔맴
+gate fidelity,게이트 충실도
+Hadamard basis,하다마드 기저
+Hamiltonian,해밀토니안
+Heisenberg scaling,하이젠베르크 척도
+heralding,예고
+heraled single photon source,예고된 단일광자 광원
+heterostructure,이질구조
+heuristic,휴리스틱
+Hilbert space,힐베르트 공간
+homodyne detection,호모다인 검출
+Hong-Ou-Mandel,홍-오우-만델
+idler beam,아이들러 빔
+interaction,상호작용
+intrinsic topological order,고유 위상론적 질서
+ion trap,이온 트랩
+Ising model,아이징 모델
+key element,암호키 요소
+local realistic theory,국소 실재론
+Mach-Zehnder,마흐-잰더
+Majornara,마요나라
+manipulation time,제어 시간
+maximum likelihood estimation,최대 가능성 추정
+mean squared error,평균 제곱 오차
+measurement,측정
+modeling,모델링
+multiple physical layer,다층 물리 계층
+multiplexer,멀티플렉서
+Nitrogen vacancy,질소 공공
+Nitrogen vacancy center,질소 공공 결함
+NV center,질소 공공 결함
+no cloning theorem,복제 물가능성 정리
+node,노드
+noise,잡음
+nonlinear,비선형
+nonlinear medium,비선형 매질
+NOON state,NOON 상태
+NP problem,NP 문제
+optical cavity,광 공진기
+optical pumping,광펌핑
+optical switch,광 스위치
+optics waveguide,광도파로
+orthonormal,직교
+parameter,매개변수
+Pauli matrix,파울리 행렬
+phase estimation,위상 추정
+phase matching,위상 정합
+phase shifter,위상 변조기
+phase-modulated laser,위상 변조 레이저
+photon couting generator,광자 수 발생기
+photon-number counter,광자 수 계수기
+photon-number resolving detection,광자 수 분해 검출
+photon-number state,광자 수 상태
+point defect,점결함
+poisson distribution,푸아송 분포
+polarizing beam splitters,편광 빔분할기
+Positive Operator Valued Measurement,POVM
+positive semi definite matrix,양행렬
+precision,정밀도
+private channel,비밀 채널
+product state,곱 상태
+pseudo random number generator,유사 난수 발생기
+pseudo random quantum circuit,유사 무작위 양자회로
+public channel,공개 채널
+pure state,순수 상태
+quadrature,쿼드러처
+quantum advantage,양자 이득
+quantum alternating operator ansatz,양자 고대 연산자 가설풀이
+quantum computer,양자 컴퓨터
+quantum computing,양자 컴퓨팅
+quantum Cramér-Rao bound,양자 크래머-라오 한계
+quantum device,양자 장치
+quantum dot,양자점
+quantum enhancement,양자 효능
+quantun error correction,양자 오류 정정
+quantum Fisher Information,양자 피셔 정보
+quantum gate,양자 게이트
+quantum imaging,양자 이미징
+quantum information,양자정보
+quantum information theory,양자정보이론
+quantum mechanics,양자역학
+quantum metrology,양자계측
+quantum model,양자 모형
+quantum network,양자네트워크
+quantum random number generator,양자 난수 발생기
+quantum repeater,양자 중계기
+quantum supremacy,양자 우위
+quantum system,양자 계
+quantum teleportation,양자전송
+quantum tomography,양자 토모그래피
+quantum well intermixing,양자 우물 혼합
+quasi phase matching,준위상 정합
+quasi probability distribution,준 확률 분포
+qubit control,큐비트 제어
+Rabi oscillation,라비 진동
+radio frequency pulse,RF 펄스
+RF pulse,RF 펄스
+Ramsey interferometry,람지 간섭계
+Ramsey measurement,람지 측정
+random,무작위
+reflectance,반사율
+repeater,중계기
+resource,자원
+reversible gate,가역 게이트
+RSA algorithm,RSA 알고리듬
+scan,주사
+secret key,비밀키
+sensitivity,민감도
+sensor,센서
+shot noise limit,산탄 잡음 한계
+shunting capacitor,갈래축전기
+sifted key,시프트 키
+sifting,시프팅
+signal beam,시그널 빔
+signal-to-noise ratio,신호 대 잡음비
+single photon,단광자
+single photon threshold,단광자 한계점
+SPDC,자발매개하향변환
+Spontaneous Parametric Down Conversion,자발매개하향변환
+spin echo,스핀 메아리
+spin liquid,스핀 액체
+spin-orbit coupling,스핀-궤도 커플링
+spin-selective tunneling,스핀에 따른 터널링
+spontanneous emission,자발 방출
+square root,제곱근
+squeezed state,조임상태
+squeezing operation,조임 연산자
+standard quantum limit,표준 양자한계
+stationary qubit,정적 큐비트
+super-resolution,초 분해능
+superconducting circuit,초전도 회로
+superdense coding,초압축 코딩
+Sycamore,시카모어
+symmetry-protected topological,대칭-보호 토폴로지
+thermal state,열적상태
+time of arrival generator,도착 시간 발생기
+topological cluster state,위상 클러스터 상태
+topological order,위상론적 질서
+transition,전이
+true random number generator,순수 난수 발생기
+trusted repeater,신뢰 중계기
+tunnel time,터널링 시간
+twin-beam,쌍둥이-빔
+twin-beam state,쌍둥이-빔 상태
+two-level atom,이준위 원자
+two mode squeezing,이중 모드 조임
+ultimate quantum limit,궁극적 양자 한계
+unbiased estimator,비편향 추정자
+unitary matrix,유니타리 행렬
+unitary operation,유니타리 연산
+universal gate,범용 게이트
+Zeeman effect,제이만 효과
