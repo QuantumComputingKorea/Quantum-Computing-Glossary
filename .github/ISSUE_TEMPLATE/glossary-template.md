@@ -3,7 +3,7 @@ name: Glossary template
 about: Template for adding/change term for translation
 title: Add/Change "TERM"
 labels: glossary
-assignees: q-inho
+assignees: Denny-Hwang, tula3and, q-inho
 
 ---
 
