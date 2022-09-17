@@ -13,7 +13,7 @@
 # 그 외 참고할만한 용어집
 
 - [Qiskit document 한글 번역](https://qiskit.org/documentation/locale/ko_KR/index.html)
-- [물리학 용어집](http://www.kps.or.kr/content/voca/search.phpac)
+- [물리학 용어집](https://www.kps.or.kr/content/voca/search.php)
 - [TTA정보통신용어사전](http://word.tta.or.kr/main.do)
 - [구글 머신러닝 용어집](https://developers.google.com/machine-learning/crash-course/glossary?hl=ko)
 - [국립국어원](https://www.korean.go.kr/front/main.do)
