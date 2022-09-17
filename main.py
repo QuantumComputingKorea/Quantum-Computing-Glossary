@@ -54,3 +54,16 @@ st.markdown(hide_table_row_index, unsafe_allow_html=True)
 # Display a static table
 with st.expander("전체 용어집"):
     st.table(sort_df)
+    
+with st.expander("참고"):
+    st.markdown('- [Qiskit document 한글 번역](https://qiskit.org/documentation/locale/ko_KR/index.html)')
+    st.markdown('- [물리학 용어집](http://www.kps.or.kr/content/voca/search.phpac)')
+    st.markdown('- [TTA정보통신용어사전](http://word.tta.or.kr/main.do)')
+    st.markdown('- [구글 머신러닝 용어집](https://developers.google.com/machine-learning/crash-course/glossary?hl=ko)')
+    st.markdown('- [국립국어원](https://www.korean.go.kr/front/main.do)')
+    st.markdown('- [대한수학회](http://www.kms.or.kr/mathdict/list.html?key=kname)')
+    st.markdown('- [네이버 라틴어사전](https://dict.naver.com/lakodict/#/main)')
+    st.markdown('- [MS Q# 공식문서](https://docs.microsoft.com/ko-kr/learn/paths/quantum-computing-fundamentals/)')
+    st.markdown('- [양자위키](https://wiki.quist.or.kr/index.php/%EB%8C%80%EB%AC%B8)')
+    st.markdown('- [양자컴퓨팅 기술백서(온라인 위키 버전)](https://wiki.quist.or.kr/index.php/%EC%96%91%EC%9E%90%EC%97%B0%EA%B5%AC%ED%9A%8C_%EC%9C%84%ED%82%A4:%EC%B1%85/%EC%96%91%EC%9E%90_%EA%B8%B0%EC%88%A0%EB%B0%B1%EC%84%9C)')
+
