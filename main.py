@@ -57,7 +57,7 @@ with st.expander("전체 용어집"):
     
 with st.expander("참고"):
     st.markdown('- [Qiskit document 한글 번역](https://qiskit.org/documentation/locale/ko_KR/index.html)')
-    st.markdown('- [물리학 용어집](http://www.kps.or.kr/content/voca/search.phpac)')
+    st.markdown('- [물리학 용어집](https://www.kps.or.kr/content/voca/search.php)')
     st.markdown('- [TTA정보통신용어사전](http://word.tta.or.kr/main.do)')
     st.markdown('- [구글 머신러닝 용어집](https://developers.google.com/machine-learning/crash-course/glossary?hl=ko)')
     st.markdown('- [국립국어원](https://www.korean.go.kr/front/main.do)')
