@@ -21,4 +21,4 @@
 - [네이버 라틴어사전](https://dict.naver.com/lakodict/#/main)
 - [MS Q# 공식문서](https://docs.microsoft.com/ko-kr/learn/paths/quantum-computing-fundamentals/)
 - [양자위키](https://wiki.quist.or.kr/index.php/%EB%8C%80%EB%AC%B8)
-- [양자컴퓨팅 기술백서(온라인 위키 버전)](https://wiki.quist.or.kr/index.php/%EC%96%91%EC%9E%90%EC%97%B0%EA%B5%AC%ED%9A%8C_%EC%9C%84%ED%82%A4:%EC%B1%85/%EC%96%91%EC%9E%90_%EA%B8%B0%EC%88%A0%EB%B0%B1%EC%84%9C]
+- [양자컴퓨팅 기술백서(온라인 위키 버전)](https://wiki.quist.or.kr/index.php/%EC%96%91%EC%9E%90%EC%97%B0%EA%B5%AC%ED%9A%8C_%EC%9C%84%ED%82%A4:%EC%B1%85/%EC%96%91%EC%9E%90_%EA%B8%B0%EC%88%A0%EB%B0%B1%EC%84%9C)
