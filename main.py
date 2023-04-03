@@ -8,17 +8,13 @@ import streamlit as st
 #3. 사이트 배열 및 커스터마이징
 
 
+
 # Title
 st.title('양자컴퓨터 문서번역 용어집')
 
 st.header('용어 검색')
 # Read data
 df = pd.read_csv('glossary.csv')
-
-
-# Define SessionState variable
-if "use_container_width" not in st.session_state:
-    st.session_state.use_container_width = True
 
 # Search Function
 #search input
@@ -28,11 +24,31 @@ search = st.text_input('검색어를 입력하세요')
 # language option
 option = st.radio('언어', ('영어', '한글'), horizontal=True)
 
+# Custom CSS for table
+custom_table_styles = """
+<style>
+    table {
+        table-layout: auto;
+        width: 100%;
+    }
+    table td, table th {
+        word-wrap: break-word;
+        max-width: 400px;
+        min-width: 100px;
+    }
+    thead tr th:first-child {display:none}
+    tbody th {display:none}
+</style>
+"""
+# Inject custom CSS
+st.markdown(custom_table_styles, unsafe_allow_html=True)
+
+
 # output search result
-if isinstance(search, str) and df['영어'].str.contains(search, case=False).any() and option == '영어':
-    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)],use_container_width=st.session_state.use_container_width)
-elif isinstance(search, str) and df['번역문'].str.contains(search, case=False).any() and option == '한글':
-    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)],use_container_width=st.session_state.use_container_width)
+if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
+    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
+elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
+    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
 elif search == '':
     st.write('')
 else:
@@ -70,4 +86,3 @@ with st.expander("참고"):
     st.markdown('- [MS Q# 공식문서](https://docs.microsoft.com/ko-kr/learn/paths/quantum-computing-fundamentals/)')
     st.markdown('- [양자위키](https://wiki.quist.or.kr/index.php/%EB%8C%80%EB%AC%B8)')
     st.markdown('- [양자컴퓨팅 기술백서(온라인 위키 버전)](https://wiki.quist.or.kr/index.php/%EC%96%91%EC%9E%90%EC%97%B0%EA%B5%AC%ED%9A%8C_%EC%9C%84%ED%82%A4:%EC%B1%85/%EC%96%91%EC%9E%90_%EA%B8%B0%EC%88%A0%EB%B0%B1%EC%84%9C)')
-
