@@ -7,9 +7,6 @@ import streamlit as st
 #2. 검색된 데이터 "번역문" 긴 한글 단어 잘리는것 해결 필요
 #3. 사이트 배열 및 커스터마이징
 
-# Set options
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.set_option('max_colwidth', 600)
 
 # Title
 st.title('양자컴퓨터 문서번역 용어집')
@@ -28,9 +25,9 @@ option = st.radio('언어', ('영어', '한글'), horizontal=True)
 
 # output search result
 if df['영어'].str.contains(search, case=False).any() and search != '' and option == '영어':
-    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)])
+    st._legacy_dataframe(df[df['영어'].str.contains(search, case=False)],use_container_width=st.session_state.use_container_width)
 elif df['번역문'].str.contains(search, case=False).any() and search != '' and option == '한글':
-    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)])
+    st._legacy_dataframe(df[df['번역문'].str.contains(search, case=False)],use_container_width=st.session_state.use_container_width)
 elif search == '':
     st.write('')
 else:
