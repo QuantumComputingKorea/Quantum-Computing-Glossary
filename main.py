@@ -7,7 +7,8 @@ import streamlit as st
 #2. 검색된 데이터 "번역문" 긴 한글 단어 잘리는것 해결 필요
 #3. 사이트 배열 및 커스터마이징
 
-
+# Set options
+st.set_option('max_colwidth', 800)
 
 # Title
 st.title('양자컴퓨터 문서번역 용어집')
