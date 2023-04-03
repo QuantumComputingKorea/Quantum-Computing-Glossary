@@ -38,6 +38,11 @@ custom_table_styles = """
     }
     thead tr th:first-child {display:none}
     tbody th {display:none}
+    /* Add the following lines */
+    table td {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
 </style>
 """
 # Inject custom CSS
