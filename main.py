@@ -9,7 +9,7 @@ import streamlit as st
 
 # Set options
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.set_option('max_colwidth', 800)
+st.set_option('max_colwidth', 600)
 
 # Title
 st.title('양자컴퓨터 문서번역 용어집')
