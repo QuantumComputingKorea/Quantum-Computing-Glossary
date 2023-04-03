@@ -8,6 +8,7 @@ import streamlit as st
 #3. 사이트 배열 및 커스터마이징
 
 # Set options
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_option('max_colwidth', 800)
 
 # Title
